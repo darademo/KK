@@ -1,0 +1,18 @@
+﻿<Window x:Class="KK.Windows.Admin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KK.Windows"
+        mc:Ignorable="d"
+        Title="Admin" Height="500" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Image HorizontalAlignment="Left" Source="/Resourses/logo.png" Margin="10,10,0,0" Height="70" VerticalAlignment="Top"/>
+
+        <Button Content="Назад" Background="LightGreen" FontSize="20" FontFamily="Comic Sans MS" HorizontalAlignment="Left" Margin="712,15,0,0" VerticalAlignment="Top" Width="75" Click="ToMain"/>
+        <DataGrid x:Name="DGrid" AutoGenerateColumns="True" HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="325" Margin="10,0,8,10"  Width="776"/>
+        <Button Content="Добавить" Click="btn_add" Background="LightGreen" FontSize="20" FontFamily="Comic Sans MS"  HorizontalAlignment="Left" Margin="91,89,0,0" VerticalAlignment="Top" Width="110"/>
+        <Button Content="Удалить" Click="btn_del" Background="LightGreen" FontSize="20" FontFamily="Comic Sans MS"  HorizontalAlignment="Left" Margin="211,89,0,0" VerticalAlignment="Top" Width="110"/>
+        <Button Content="Сохранить" Click="btn_save" Background="LightGreen" FontSize="20" FontFamily="Comic Sans MS"  HorizontalAlignment="Left" Margin="331,89,0,0" VerticalAlignment="Top" Width="110"/>
+    </Grid>
+</Window>
